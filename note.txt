@@ -1,0 +1,6 @@
+pub.dev
+
+dependencies'e ekledikten sonra console'a asagi satiri yaziyoruz. Boylece dependencies'ler otomatik yukleniyor.
+pub get
+
+flutter_tints  statik kod analizi yapmamizi sagliyormus.
