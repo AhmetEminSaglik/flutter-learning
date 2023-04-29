@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_demo/app_bar_learn.dart';
 import 'package:flutter_demo/button_learn.dart';
 import 'package:flutter_demo/card_learn.dart';
+import 'package:flutter_demo/demo/note_demos_view.dart';
 import 'package:flutter_demo/icon_learn.dart';
 import 'package:flutter_demo/image_learn.dart';
 import 'package:flutter_demo/padding_learn.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       )),
-      home:  const ImageLearn(),
+      home:  const NoteDemos(),
     );
   }
 }
