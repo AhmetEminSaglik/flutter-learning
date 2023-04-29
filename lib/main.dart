@@ -2,12 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_demo/app_bar_learn.dart';
 import 'package:flutter_demo/button_learn.dart';
+import 'package:flutter_demo/card_learn.dart';
 import 'package:flutter_demo/icon_learn.dart';
+import 'package:flutter_demo/padding_learn.dart';
+import 'package:flutter_demo/stateless_learn.dart';
 
 void main() {
   runApp(const MyApp());
 }
-
+//ctrl + .  --> shows options to fix error
+//  shift +ctrl + r --> shows  extract options  
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -24,7 +28,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       )),
-      home: IconLearnView(),
+      home:  const CardLearn(),
     );
   }
 }

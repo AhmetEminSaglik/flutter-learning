@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 // flutter run ile console'a yazip calistiyoruz.
-//3. video  dakka 17.00 da kaldim.  : https://www.youtube.com/watch?v=oQYjX7v1JOA&list=PL1k5oWAuBhgXdw1BbxVGxxWRmkGB1C11l&index=3
+//4. video basindayim https://www.youtube.com/watch?v=C6G0C7TpffQ&list=PL1k5oWAuBhgXdw1BbxVGxxWRmkGB1C11l&index=4
 class ButtonLearn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
