@@ -20,7 +20,7 @@ class NoteDemos extends StatelessWidget {
           child: Column(children: [
             PngImage(name: ImageItems().appleWithoutPath),
             const _TitleWidget(title: _title),
-            _getSubtitleWidgetWithPadding(_description),
+            _getSubtitleWidgetWithPadding( _description),
             const Spacer(),
             _createButton(_createNote, context),
             TextButton(onPressed: () {}, child: Text(_importNote)),
@@ -29,7 +29,7 @@ class NoteDemos extends StatelessWidget {
     );
   }
 
-  Padding _getSubtitleWidgetWithPadding(String _description) => Padding(padding: PaddingItems.verticalPadding,child: const _SubTitleWidget(textAlign: TextAlign.center,description: _description,),);
+  Padding _getSubtitleWidgetWithPadding(String _description) => Padding(padding: PaddingItems.verticalPadding,child: _SubTitleWidget(textAlign: TextAlign.center,description: _description),);
 
   ElevatedButton _createButton(String _createNote, BuildContext context) {
     return ElevatedButton(
