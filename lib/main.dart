@@ -8,11 +8,12 @@ import 'package:flutter_demo/demo/note_demos_view.dart';
 import 'package:flutter_demo/icon_learn.dart';
 import 'package:flutter_demo/image_learn.dart';
 import 'package:flutter_demo/indicator_learn.dart';
+import 'package:flutter_demo/list_tile_learn.dart';
 import 'package:flutter_demo/padding_learn.dart';
 import 'package:flutter_demo/stateless_learn.dart';
 
 // https://www.youtube.com/watch?v=cHhRGEAgTNE&list=PL1k5oWAuBhgXdw1BbxVGxxWRmkGB1C11l&index=6
-// 28.45'de  kaldim
+// 46.00'da kaldim
 void main() {
   runApp(const MyApp());
 }
@@ -28,14 +29,16 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
-        progressIndicatorTheme: const ProgressIndicatorThemeData(color: Colors.green),
+        progressIndicatorTheme: const ProgressIndicatorThemeData(color: Colors.pink),
+        listTileTheme: ListTileThemeData(contentPadding: EdgeInsets.zero),
           appBarTheme: const AppBarTheme(
         centerTitle: true,
         systemOverlayStyle: SystemUiOverlayStyle.light,
         backgroundColor: Colors.transparent,
         elevation: 0,
       )),
-      home:  IndicatorLearn(),
+      home:  ListTileLearn()
+      //IndicatorLearn(),
     );
   }
 }

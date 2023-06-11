@@ -1,0 +1,3 @@
+1-) to pick random images go to `random image` website and use the link
+2-) if component is not common, special for the project, then code in `core` package. 
+if components is common, special for the project then code in 'product' package.
