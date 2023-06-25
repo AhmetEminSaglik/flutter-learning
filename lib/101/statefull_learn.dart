@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/101/product/counter_hello_button.dart';
 import 'package:flutter_demo/core/random_image.dart';
 
 // statless widget, immutable, degismez, sadece aldigini gosteriyor.
@@ -12,6 +13,7 @@ class StatefullLearn extends StatefulWidget {
 
 class _StatefullLearnState extends State<StatefullLearn> {
   int _countValue = 0;
+  int _counterCustomer = 0;
   void increaseValue() {
     setState(() {
       _countValue += 1;
@@ -29,25 +31,18 @@ class _StatefullLearnState extends State<StatefullLearn> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
+      body: Column(
+        children: [
+          ImageForCounter(countValue: _countValue),
+          DisplayMediumSizeTheCounter(countValue: _countValue),
+          const CounterHelloButton()
+        ],
+      ),
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           _incrementButton(),
           _decrementButton(),
-        ],
-      ),
-      body: Column(
-        children: [
-          Positioned.fill(
-              child: RandomImage(
-            width: 300 + _countValue,
-            height: 300 - _countValue,
-          )),
-          Center(
-              child: Text(
-            _countValue.toString(),
-            style: Theme.of(context).textTheme.displayMedium,
-          )),
         ],
       ),
     );
@@ -66,11 +61,48 @@ class _StatefullLearnState extends State<StatefullLearn> {
   }
 
   FloatingActionButton _incrementButton() {
+    print('burda');
     return FloatingActionButton(
       onPressed: () {
         increaseValue();
       },
       child: Icon(Icons.add),
     );
+  }
+}
+
+class DisplayMediumSizeTheCounter extends StatelessWidget {
+  const DisplayMediumSizeTheCounter({
+    super.key,
+    required int countValue,
+  }) : _countValue = countValue;
+
+  final int _countValue;
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+        child: Text(
+      _countValue.toString(),
+      style: Theme.of(context).textTheme.displayMedium,
+    ));
+  }
+}
+
+class ImageForCounter extends StatelessWidget {
+  const ImageForCounter({
+    super.key,
+    required int countValue,
+  }) : _countValue = countValue;
+
+  final int _countValue;
+
+  @override
+  Widget build(BuildContext context) {
+    return Positioned.fill(
+        child: RandomImage(
+      width: 300 + _countValue,
+      height: 300 - _countValue,
+    ));
   }
 }

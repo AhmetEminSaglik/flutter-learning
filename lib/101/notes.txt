@@ -9,3 +9,8 @@ if components is common, special for the project then code in 'product' package.
 // to change extra feature (vertical)
 - crossAxisAlignment : crossAxisAlignment.start   or 
                        crossAxisAlignment.end
+
+!!!MOST IMPORTANT:
+If there is a process, it should be added with a statefull widget, instead of adding in a same dart class.
+For example there is a button,  when it is clicked, the number is increased. So this is a statefull widget
+this widget is located in product package,and invoked the widget in page. (did not created the widget direct in the page class)
