@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_demo/101/stack_learn.dart';
+import '../demo/stack_demo_view.dart';
 import 'app_bar_learn.dart';
 import 'button_learn.dart';
 import 'card_learn.dart';
@@ -39,7 +41,9 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       )),
-      home:  ColumnRowLearn()
+      home:  StackDemoView()
+      //StackLearn()
+      //ColumnRowLearn()
       //ListTileLearn()
       //IndicatorLearn(),
     );
