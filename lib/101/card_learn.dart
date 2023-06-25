@@ -9,23 +9,22 @@ class CardLearn extends StatelessWidget {
       appBar: AppBar(),
       body: Column(children: [
         _CustomCard(
-          child: SizedBox(
+          child: const SizedBox(
               height: 100, width: 300, child: Center(child: Text("Ahmet 1"))),
         ),
         _CustomCard(
-          child: SizedBox(
+          child: const SizedBox(
               height: 100, width: 300, child: Center(child: Text("Emin"))),
         ),
         _CustomCard(
-          child: SizedBox(
+          child: const SizedBox(
               height: 100, width: 300, child: Center(child: Text("Saglik"))),
         ),
         _CustomCard(
-          child: SizedBox(
+          child: const SizedBox(
               height: 100, width: 300, child: Center(child: Text("Ahmet 4"))),
         )
 //   shape: StadiumBorder());
-
 
         // Card(
         //     elevation: 10,
@@ -61,7 +60,7 @@ class _CustomCard extends StatelessWidget {
         elevation: 10,
         margin: ProjectMargins.cardMargin,
         color: Colors.green,
-        child: child,
-        shape: roundedRectangleBorder);
+        shape: roundedRectangleBorder,
+        child: child);
   }
 }

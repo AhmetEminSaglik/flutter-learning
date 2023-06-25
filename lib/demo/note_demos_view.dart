@@ -24,8 +24,8 @@ class NoteDemos extends StatelessWidget {
             _getSubtitleWidgetWithPadding( _description),
             const Spacer(),
             _createButton(_createNote, context),
-            TextButton(onPressed: () {}, child: Text(_importNote)),
-            SizedBox(height: 50)
+            TextButton(onPressed: () {}, child: const Text(_importNote)),
+            const SizedBox(height: 50)
           ])),
     );
   }
@@ -84,8 +84,8 @@ class _TitleWidget extends StatelessWidget {
 
 class PaddingItems {
   static EdgeInsets horizontalPadding =
-      new EdgeInsets.symmetric(horizontal: 20);
-  static EdgeInsets verticalPadding = new EdgeInsets.symmetric(vertical: 20);
+      const EdgeInsets.symmetric(horizontal: 20);
+  static EdgeInsets verticalPadding = const EdgeInsets.symmetric(vertical: 20);
 }
 
 class ButtonHeights {

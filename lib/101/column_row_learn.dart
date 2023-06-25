@@ -20,13 +20,13 @@ class ColumnRowLearn extends StatelessWidget {
                   Expanded(child: Container(color: Colors.pink)),
                 ],
               )),
-          Spacer(flex: 2),
+          const Spacer(flex: 2),
           Expanded(
               flex: 2,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
+                children: const [
                   Text("a1"),
                   Text("a2"),
                   Text("a3"),
@@ -43,7 +43,7 @@ class ColumnRowLearn extends StatelessWidget {
               )
             ]),
           ),
-          Expanded(flex: 2, child: FlutterLogo()),
+          const Expanded(flex: 2, child: FlutterLogo()),
         ],
       ),
     ); //const Text('data'),

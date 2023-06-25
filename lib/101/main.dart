@@ -34,14 +34,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
         progressIndicatorTheme: const ProgressIndicatorThemeData(color: Colors.pink),
-        listTileTheme: ListTileThemeData(contentPadding: EdgeInsets.zero),
+        listTileTheme: const ListTileThemeData(contentPadding: EdgeInsets.zero),
           appBarTheme: const AppBarTheme(
         centerTitle: true,
         systemOverlayStyle: SystemUiOverlayStyle.light,
         backgroundColor: Colors.transparent,
         elevation: 0,
       )),
-      home: StatefullLearn()
+      home: const StatefullLearn()
       // home:  StackDemoView()
       //StackLearn()
       //ColumnRowLearn()

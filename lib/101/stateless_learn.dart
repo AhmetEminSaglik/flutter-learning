@@ -7,7 +7,7 @@ class StatelessLearn extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Column(children: [
+      body: Column(children: const [
         TitleTextWidget(text: "Ali2"),
         TitleTextWidget(text: "very long name "),
         TitleTextWidget(text: "C"),

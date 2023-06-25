@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/101/product/language/language_items.dart';
 
 class CounterHelloButton extends StatefulWidget {
   // bir degisken var ve kucukde olsa bir hayat var o yuzden stateful yapiyoruz
@@ -10,7 +11,6 @@ class CounterHelloButton extends StatefulWidget {
 
 class _CounterHelloButtonState extends State<CounterHelloButton> {
   int _counterCustomer = 0;
-  final String _welcomeTitle = 'Hello';
 
   void _updateCounter() {
     setState(() {
@@ -22,7 +22,7 @@ class _CounterHelloButtonState extends State<CounterHelloButton> {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: _updateCounter,
-      child: Text('$_welcomeTitle $_counterCustomer'),
+      child: Text('${LanguageItems.welcomeTitle} $_counterCustomer'),
     );
   }
 }

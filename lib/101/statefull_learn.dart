@@ -13,7 +13,6 @@ class StatefullLearn extends StatefulWidget {
 
 class _StatefullLearnState extends State<StatefullLearn> {
   int _countValue = 0;
-  int _counterCustomer = 0;
   void increaseValue() {
     setState(() {
       _countValue += 1;

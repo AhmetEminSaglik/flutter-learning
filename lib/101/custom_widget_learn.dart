@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CustomWidgetLearn extends StatelessWidget {
   // wtih oldugu zaman, dogrudan degiskeni kullaniyoruz. Ama dogru bir solution degil.
-  CustomWidgetLearn({super.key});
+  const CustomWidgetLearn({super.key});
   final String title = 'Food';
 
   @override

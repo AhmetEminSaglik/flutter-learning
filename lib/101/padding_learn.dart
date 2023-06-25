@@ -13,7 +13,7 @@ class PaddingLearn extends StatelessWidget {
             children: [
               Container(color: Colors.white, height: 100, width: 200),
               Padding(
-                  padding: EdgeInsets.only(right: 20) +
+                  padding: const EdgeInsets.only(right: 20) +
                       const EdgeInsets.symmetric(vertical: 10),
                   child: Container(color: Colors.blue, height: 100)),
               Container(color: Colors.orange, height: 100, width: 200),
