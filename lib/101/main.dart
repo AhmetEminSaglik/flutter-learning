@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_demo/app_bar_learn.dart';
-import 'package:flutter_demo/button_learn.dart';
-import 'package:flutter_demo/card_learn.dart';
-import 'package:flutter_demo/custom_widget_learn.dart';
-import 'package:flutter_demo/demo/note_demos_view.dart';
-import 'package:flutter_demo/icon_learn.dart';
-import 'package:flutter_demo/image_learn.dart';
-import 'package:flutter_demo/indicator_learn.dart';
-import 'package:flutter_demo/list_tile_learn.dart';
-import 'package:flutter_demo/padding_learn.dart';
-import 'package:flutter_demo/stateless_learn.dart';
+import 'app_bar_learn.dart';
+import 'button_learn.dart';
+import 'card_learn.dart';
+import 'custom_widget_learn.dart';
+import '../demo/note_demos_view.dart';
+import 'icon_learn.dart';
+import 'image_learn.dart';
+import 'indicator_learn.dart';
+import 'list_tile_learn.dart';
+import 'padding_learn.dart';
+import 'stateless_learn.dart';
+
 
 // https://www.youtube.com/watch?v=cHhRGEAgTNE&list=PL1k5oWAuBhgXdw1BbxVGxxWRmkGB1C11l&index=6
 // 46.00'da kaldim
