@@ -1,0 +1,2 @@
+`core` can be used everywhere.
+`product` can not be used everywhere.
