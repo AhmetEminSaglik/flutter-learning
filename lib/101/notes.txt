@@ -1,3 +1,11 @@
 1-) to pick random images go to `random image` website and use the link
 2-) if component is not common, special for the project, then code in `core` package. 
 if components is common, special for the project then code in 'product' package.
+3-) Row(mainAxisAlignment: MainAxisAlignment.spaceAround) 
+ // to change main feature (horizontal)
+- MainAxisAlignment.spaceAround : start,mid,end spaces
+- MainAxisAlignment.spaceBetween : mid spaces
+- MainAxisAlignment.spaceEvenly : mid (mostly fix items to center) 
+// to change extra feature (vertical)
+- crossAxisAlignment : crossAxisAlignment.start   or 
+                       crossAxisAlignment.end

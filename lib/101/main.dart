@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'app_bar_learn.dart';
 import 'button_learn.dart';
 import 'card_learn.dart';
+import 'column_row_learn.dart';
 import 'custom_widget_learn.dart';
 import '../demo/note_demos_view.dart';
 import 'icon_learn.dart';
@@ -38,7 +39,8 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       )),
-      home:  ListTileLearn()
+      home:  ColumnRowLearn()
+      //ListTileLearn()
       //IndicatorLearn(),
     );
   }
