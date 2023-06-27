@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_demo/101/page_view_learn.dart';
 import 'package:flutter_demo/101/stack_learn.dart';
 import 'package:flutter_demo/101/statefull_learn.dart';
 import '../demo/stack_demo_view.dart';
@@ -17,7 +18,8 @@ import 'padding_learn.dart';
 import 'stateless_learn.dart';
 
 
-// https://www.youtube.com/watch?v=YSbQ5_yS2ug&list=PL1k5oWAuBhgXdw1BbxVGxxWRmkGB1C11l&index=7
+// https://www.youtube.com/watch?v=YSbQ5_yS2ug&list=PL1k5oWAuBhgXdw1BbxVGxxWRmkGB1C11l&index=8
+//32:30
 void main() {
   runApp(const MyApp());
 }
@@ -41,7 +43,8 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       )),
-      home: const StatefullLearn()
+      home: const PageViewLearn()
+      //const StatefullLearn()
       // home:  StackDemoView()
       //StackLearn()
       //ColumnRowLearn()

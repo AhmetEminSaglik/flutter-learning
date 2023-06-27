@@ -54,7 +54,7 @@ class _StatefullLearnState extends State<StatefullLearn> {
         onPressed: () {
           decreaseValue();
         },
-        child: Icon(Icons.remove),
+        child: const Icon(Icons.remove),
       ),
     );
   }
@@ -65,7 +65,7 @@ class _StatefullLearnState extends State<StatefullLearn> {
       onPressed: () {
         increaseValue();
       },
-      child: Icon(Icons.add),
+      child: const Icon(Icons.add),
     );
   }
 }
